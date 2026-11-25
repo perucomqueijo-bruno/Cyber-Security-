@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const searchContainer = document.querySelector(".search");
-  const searchInput = searchContainer.querySelector('input[type="search"]');
+  const searchInput = searchContainer.querySelector("input");
   const navLinks = document.querySelectorAll("nav.icons a");
 
   // Captura texto, link e ícone diretamente do seu <nav>
@@ -31,7 +31,8 @@ document.addEventListener("DOMContentLoaded", () => {
     searchInput.value = nome;
     listaSugestoes.style.display = "none";
     indiceSelecionado = -1;
-    window.location.hash = href;
+    window.location.href = href;
+
   }
 
   function atualizarDestaque(itens) {

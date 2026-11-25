@@ -124,8 +124,9 @@ header {
     width: 50px;
     filter: drop-shadow(0 3px 6px rgba(10, 72, 87, .3));
 }
-
+/*barra de pesquisa*/
 .search {
+    position: relative;
     flex: 1;
     min-width: 180px;
     display: flex;
@@ -210,7 +211,7 @@ header {
 
 
 
-
+/*menu*/
 #menu-toggle {
     position: absolute;
     opacity: 0;
@@ -244,6 +245,8 @@ header {
     outline: 3px solid var(--oceano);
     outline-offset: 3px;
 }
+
+/*icones menu*/
 
 nav.icons {
     display: flex;
@@ -288,23 +291,23 @@ nav.icons a:focus-visible i {
     box-shadow: 0 10px 20px rgba(10, 72, 87, .35);
 }
 
-body:has(#inicio:target) nav.icons a[href="#inicio"],
-body:has(#funcionamos:target) nav.icons a[href="#funcionamos"],
-body:has(#ameacas:target) nav.icons a[href="#ameacas"],
-body:has(#proteger:target) nav.icons a[href="#proteger"],
-body:has(#planos:target) nav.icons a[href="#planos"],
-body:has(#contatos:target) nav.icons a[href="#contatos"],
-body:not(:has(.page:target)) nav.icons a[href="#inicio"] {
+body:has(#inicio:target) nav.icons a[href="index.html"],
+body:has(#funcionamos:target) nav.icons a[href="funcionamos.html"],
+body:has(#ameacas:target) nav.icons a[href="ameacas.html"],
+body:has(#proteger:target) nav.icons a[href="proteger.html"],
+body:has(#planos:target) nav.icons a[href="planos.html"],
+body:has(#contatos:target) nav.icons a[href="contatos.html"],
+body:not(:has(.page:target)) nav.icons a[href="index.html"] {
     font-weight: 700;
 }
 
-body:has(#inicio:target) nav.icons a[href="#inicio"] i,
-body:has(#funcionamos:target) nav.icons a[href="#funcionamos"] i,
-body:has(#ameacas:target) nav.icons a[href="#ameacas"] i,
-body:has(#proteger:target) nav.icons a[href="#proteger"] i,
-body:has(#planos:target) nav.icons a[href="#planos"] i,
-body:has(#contatos:target) nav.icons a[href="#contatos"] i,
-body:not(:has(.page:target)) nav.icons a[href="#inicio"] i {
+body:has(#inicio:target) nav.icons a[href="index.html"] i,
+body:has(#funcionamos:target) nav.icons a[href="funcionamos.html"] i,
+body:has(#ameacas:target) nav.icons a[href="ameacas.html"] i,
+body:has(#proteger:target) nav.icons a[href="proteger.html"] i,
+body:has(#planos:target) nav.icons a[href="planos.html"] i,
+body:has(#contatos:target) nav.icons a[href="contatos.html"] i,
+body:not(:has(.page:target)) nav.icons a[href="index.html"] i {
     border-color: var(--oceano);
     border-width: 4px;
     box-shadow: 0 0 0 4px var(--algodao), 0 8px 16px rgba(10, 72, 87, .3);
@@ -319,7 +322,7 @@ main {
 }
 
 .page {
-    display: none;
+    display: block;
     scroll-margin-top: var(--altura-header);
 }
 
@@ -327,9 +330,7 @@ main {
     animation: fade .5s;
 }
 
-.page:target {
-    display: block;
-}
+
 
 main:not(:has(.page:target)) #inicio {
     display: block;
@@ -1058,7 +1059,7 @@ button:hover {
 footer {
     background: var(--oceano);
     color: var(--algodao);
-    padding: 36px 5% 20px;
+    padding: 36px 5% 40px;
     font-size: 14px;
 }
 
