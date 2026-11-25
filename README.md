@@ -27,3 +27,9 @@
     • Contatos: links reais (e-mail, telefone, WhatsApp), campos com rótulos, assunto e horário de atendimento;
     • Acessibilidade: textos alternativos, atalho "Pular para o conteúdo", foco visível no teclado e respeito a quem prefere menos animação;
     • CSS organizado em seções comentadas e sem estilos soltos dentro do HTML.
+ 
+##Versão Final
+   •Barra de pesquisa funcional (utilização de java script);
+   •conserto de bugs das versões anteriores;
+   •mais telas informativas;
+   
