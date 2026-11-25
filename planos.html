@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cyber Security — Sua privacidade, nossa responsabilidade</title>
+  <meta name="description"
+    content="Cyber Security: conheça ameaças digitais, aprenda a se proteger e escolha seu plano.">
+  <meta name="theme-color" content="#4BB0CA">
+  <link rel="icon" type="image/png" href="img/logo-escudo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+
+
+
+  <!-- Atalho para quem navega pelo teclado -->
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- Checkbox que abre/fecha o menu no celular (sem JavaScript) -->
+  <input type="checkbox" id="menu-toggle" aria-label="Abrir menu">
+
+  <header>
+    <a class="logo" href="index.html">
+      <img src="img/logo-escudo.png" alt="" width="50" height="50">
+      Cyber Security
+    </a>
+
+    <label class="search">
+      <span class="sr-only">Pesquisar no site</span>
+      <span class="search-icon" aria-hidden="true">⌕</span>
+      <input type="search" placeholder="Pesquisar">
+    </label>
+
+    <label for="menu-toggle" class="menu-btn">
+      <span class="menu-open">☰ Menu</span>
+      <span class="menu-close">✕ Fechar</span>
+    </label>
+  </header>
+
+  <nav class="icons" aria-label="Navegação principal">
+    <a href="index.html"><i><img src="img/inicio.png" alt="" width="30" height="30"></i>Início</a>
+    <a href="funcionamos.html"><i><img src="img/duvida.png" alt="" width="40" height="34"></i>Como funcionamos</a>
+    <a href="ameacas.html"><i><img src="img/olho.png" alt="" width="40" height="34"></i>Ameaças</a>
+    <a href="proteger.html"><i><img src="img/cadeado.png" alt="" width="36" height="30"></i>Como se proteger</a>
+    <a href="planos.html"><i><img src="img/plano.png" alt="" width="34" height="34"></i>Planos</a>
+    <a href="contatos.html"><i><img src="img/contatos.png" alt="" width="40" height="31"></i>Nossos contatos</a>
+  </nav>
+
+  <main id="conteudo">
+
+     <!-- ============ PLANOS ============ -->
+    <section id="planos" class="page plans">
+      <h1>Planos</h1>
+      <p class="lead">Escolha a proteção ideal. Sem fidelidade, cancele quando quiser.</p>
+      <div class="grid">
+        <article class="card">
+          <h3>Básico</h3>
+          <div class="price">R$19<small>/mês</small></div>
+          <ul>
+            <li>✔ Antivírus</li>
+            <li>✔ 1 dispositivo</li>
+            <li>✔ Suporte por e‑mail</li>
+          </ul>
+          <a class="btn" href="#contatos">Assinar</a>
+        </article>
+        <article class="card featured">
+          <span class="badge">Mais escolhido</span>
+          <h3>Família</h3>
+          <div class="price">R$39<small>/mês</small></div>
+          <ul>
+            <li>✔ Antivírus + Firewall</li>
+            <li>✔ 5 dispositivos</li>
+            <li>✔ Suporte 24h</li>
+          </ul>
+          <a class="btn" href="#contatos">Assinar</a>
+        </article>
+        <article class="card">
+          <h3>Empresa</h3>
+          <div class="price">R$99<small>/mês</small></div>
+          <ul>
+            <li>✔ Proteção completa</li>
+            <li>✔ Dispositivos ilimitados</li>
+            <li>✔ Monitoramento dedicado</li>
+          </ul>
+          <a class="btn" href="#contatos">Assinar</a>
+        </article>
+      </div>
+
+      <h2>Compare os planos</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Recurso</th>
+              <th scope="col">Básico</th>
+              <th scope="col">Família</th>
+              <th scope="col">Empresa</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Antivírus</th>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <th scope="row">Firewall</th>
+              <td>—</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <th scope="row">Dispositivos</th>
+              <td>1</td>
+              <td>5</td>
+              <td>Ilimitados</td>
+            </tr>
+            <tr>
+              <th scope="row">Suporte</th>
+              <td>E‑mail</td>
+              <td>24h</td>
+              <td>Dedicado</td>
+            </tr>
+            <tr>
+              <th scope="row">Monitoramento</th>
+              <td>—</td>
+              <td>—</td>
+              <td>✔</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Perguntas frequentes</h2>
+      <details>
+        <summary>Posso trocar de plano depois?</summary>
+        <p>Sim. Você pode mudar para outro plano a qualquer momento.</p>
+      </details>
+      <details>
+        <summary>Tem fidelidade ou multa?</summary>
+        <p>Não. Você cancela quando quiser, sem multa.</p>
+      </details>
+      <details>
+        <summary>Funciona no celular?</summary>
+        <p>Sim, todos os planos protegem computadores, celulares e tablets.</p>
+      </details>
+      <a class="to-top" href="#planos" aria-label="Voltar ao topo">↑</a>
+    </section>
+
+  </main>
+
+    <footer>
+    <div class="footer-grid">
+      <div>
+        <p class="footer-logo">Cyber Security</p>
+        <p>Sua privacidade, nossa responsabilidade.</p>
+      </div>
+      <nav aria-label="Links do rodapé">
+        <a href="index.html">Início</a>
+        <a href="funcionamos.html">Como funcionamos</a>
+        <a href="ameacas.html">Ameaças</a>
+        <a href="proteger.html">Como se proteger</a>
+        <a href="planos.html">Planos</a>
+        <a href="contatos.html">Contatos</a>
+      </nav>
+      <div>
+        <p><b>Grupo 2</b></p>
+        <p>Bruno Lemos · Thiago Bina · Ana Beatriz · Jonathan Walter · Thainá Pereira Bellani</p>
+      </div>
+    </div>
+    <p class="copy">© 2026 Cyber Security — Projeto Integrador Grupo 2</p>
+  </footer>
+<script src="search.js"></script>
+</body>
+
+</html>

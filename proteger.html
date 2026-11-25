@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cyber Security — Sua privacidade, nossa responsabilidade</title>
+  <meta name="description"
+    content="Cyber Security: conheça ameaças digitais, aprenda a se proteger e escolha seu plano.">
+  <meta name="theme-color" content="#4BB0CA">
+  <link rel="icon" type="image/png" href="img/logo-escudo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+  <!-- Atalho para quem navega pelo teclado -->
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- Checkbox que abre/fecha o menu no celular (sem JavaScript) -->
+  <input type="checkbox" id="menu-toggle" aria-label="Abrir menu">
+
+  <header>
+    <a class="logo" href="index.html">
+      <img src="img/logo-escudo.png" alt="" width="50" height="50">
+      Cyber Security
+    </a>
+
+    <label class="search">
+      <span class="sr-only">Pesquisar no site</span>
+      <span class="search-icon" aria-hidden="true">⌕</span>
+      <input type="search" placeholder="Pesquisar">
+    </label>
+
+    <label for="menu-toggle" class="menu-btn">
+      <span class="menu-open">☰ Menu</span>
+      <span class="menu-close">✕ Fechar</span>
+    </label>
+  </header>
+
+  <nav class="icons" aria-label="Navegação principal">
+    <a href="index.html"><i><img src="img/inicio.png" alt="" width="30" height="30"></i>Início</a>
+    <a href="funcionamos.html"><i><img src="img/duvida.png" alt="" width="40" height="34"></i>Como funcionamos</a>
+    <a href="ameacas.html"><i><img src="img/olho.png" alt="" width="40" height="34"></i>Ameaças</a>
+    <a href="proteger.html"><i><img src="img/cadeado.png" alt="" width="36" height="30"></i>Como se proteger</a>
+    <a href="planos.html"><i><img src="img/plano.png" alt="" width="34" height="34"></i>Planos</a>
+    <a href="contatos.html"><i><img src="img/contatos.png" alt="" width="40" height="31"></i>Nossos contatos</a>
+  </nav>
+
+  <main id="conteudo">
+
+     <!-- ============ COMO SE PROTEGER ============ -->
+    <section id="proteger" class="page">
+      <h1>Como se proteger</h1>
+      <p class="lead">Pequenos hábitos fazem uma grande diferença.</p>
+      <details open>
+        <summary>Use senhas fortes e únicas</summary>
+        <p>Combine letras, números e símbolos e use um gerenciador de senhas.</p>
+      </details>
+      <details>
+        <summary>Ative a verificação em duas etapas</summary>
+        <p>Mesmo que roubem sua senha, o acesso continua bloqueado.</p>
+      </details>
+      <details>
+        <summary>Desconfie de links e anexos</summary>
+        <p>Confira o remetente antes de clicar em qualquer coisa.</p>
+      </details>
+      <details>
+        <summary>Mantenha tudo atualizado</summary>
+        <p>Sistema, aplicativos e antivírus sempre na versão mais recente.</p>
+      </details>
+      <details>
+        <summary>Faça backups</summary>
+        <p>Guarde cópias dos seus arquivos importantes em local seguro.</p>
+      </details>
+
+      <div class="tools">
+        <!-- Checklist interativo: o contador é feito só com CSS -->
+        <div class="checklist">
+          <h2>Seu checklist de segurança</h2>
+          <p>Marque o que você já faz:</p>
+          <label><input type="checkbox"> Uso senhas diferentes em cada conta</label>
+          <label><input type="checkbox"> Tenho verificação em duas etapas</label>
+          <label><input type="checkbox"> Confiro links antes de clicar</label>
+          <label><input type="checkbox"> Mantenho o celular atualizado</label>
+          <label><input type="checkbox"> Faço backup dos meus arquivos</label>
+          <p class="score"></p>
+        </div>
+
+        <!-- Medidor de senha: muda de cor só com CSS (pattern + :valid) -->
+        <div class="password-test">
+          <h2>Teste um exemplo de senha</h2>
+          <p>Não digite sua senha real! Use um exemplo para entender o que é uma senha forte.</p>
+          <label for="senha-teste" class="sr-only">Senha de exemplo</label>
+          <input id="senha-teste" type="text" placeholder="Ex.: Gato#Azul2026" autocomplete="off"
+            pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^a-zA-Z0-9]).{10,}">
+          <div class="meter"><span></span></div>
+          <p class="meter-text"></p>
+          <small>Senha forte: 10+ caracteres, letra maiúscula, minúscula, número e símbolo.</small>
+        </div>
+      </div>
+      <a class="to-top" href="#proteger" aria-label="Voltar ao topo">↑</a>
+    </section>
+
+  </main>
+
+    <footer>
+    <div class="footer-grid">
+      <div>
+        <p class="footer-logo">Cyber Security</p>
+        <p>Sua privacidade, nossa responsabilidade.</p>
+      </div>
+      <nav aria-label="Links do rodapé">
+        <a href="index.html">Início</a>
+        <a href="funcionamos.html">Como funcionamos</a>
+        <a href="ameacas.html">Ameaças</a>
+        <a href="proteger.html">Como se proteger</a>
+        <a href="planos.html">Planos</a>
+        <a href="contatos.html">Contatos</a>
+      </nav>
+      <div>
+        <p><b>Grupo 2</b></p>
+        <p>Bruno Lemos · Thiago Bina · Ana Beatriz · Jonathan Walter · Thainá Pereira Bellani</p>
+      </div>
+    </div>
+    <p class="copy">© 2026 Cyber Security — Projeto Integrador Grupo 2</p>
+  </footer>
+<script src="search.js"></script>
+</body>
+
+</html>
